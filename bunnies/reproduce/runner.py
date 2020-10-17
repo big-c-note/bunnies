@@ -7,10 +7,13 @@ log = logging.getLogger(__name__)
 
 
 # Bunny
-bunny: str = """(\\_/)\n(•_•)\n/ > 🎷🐇 """
+BUNNY: str = """(\\_/)\n(•_•)\n/ > 🎷🐇 """
+
+# Bunny Parts
+BUNNY_PARTS: List[str] = BUNNY.split("\n")
 
 # Indent
-indent: str = ". . "
+INDENT: str = ". . "
 
 
 def fib(n: int):
@@ -38,9 +41,8 @@ def make_bunnies(levels: int) -> str:
     bunny_holders: List[str] = []
     for i in range(1, levels):
         num_bunnies: int = fib(i)
-        bunny_parts: List[str] = bunny.split("\n")
-        indents: str = indent * (i - 1)
-        indented_bunny_parts: List[str] = [indents + part for part in bunny_parts]
+        indents: str = INDENT * (i - 1)
+        indented_bunny_parts: List[str] = [indents + part for part in BUNNY_PARTS]
         indented_bunny: str = "\n".join(indented_bunny_parts) + "\n"
         bunnies: str = (indented_bunny * num_bunnies)[:-2] + " (\n"
         bunny_reproduction += bunnies
