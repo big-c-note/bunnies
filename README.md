@@ -1,10 +1,19 @@
-### Bunnies
+## Bunnies
 
 (\_/)
+
 (?_?)
+
 / > 
 
-Create bunny meme reproduction as according to the fibonacci sequence.
+### Set up.
+
+``` bash 
+pip3 install -r requirements.txt
+pip3 install -e .
+```
+
+### Create bunny meme reproduction as according to the fibonacci sequence.
 
 ``` bash
 cd top/level/directory
