@@ -7,10 +7,10 @@ log = logging.getLogger(__name__)
 
 
 # Bunny
-bunny: str = """(\\_/)\n(?_?)\n/ > """
+bunny: str = """(\\_/)\n(•_•)\n/ > 🎷🐇 """
 
 # Indent
-indent: str = ". "
+indent: str = ". . "
 
 
 def fib(n: int):
